@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Convert Things</h1>
+        <h1>ConvertThings</h1>
         <select value={measure} onChange={(e) => setMeasure(e.target.value)}>
           {measures.map((measure) => {
             return <option value={measure}>{format(measure)}</option>;
