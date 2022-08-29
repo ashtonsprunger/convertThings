@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import convert from "convert-units";
 
 function Convert(props) {
-  const [from, setFrom] = useState(props.measure[0]);
-  const [to, setTo] = useState(props.measure[1]);
+  // const [from, setFrom] = useState(props.measure[0]);
+  // const [to, setTo] = useState(props.measure[1]);
   const [fromAbbr, setFromAbbr] = useState("");
   const [toAbbr, setToAbbr] = useState("");
   const [fromValue, setFromValue] = useState(0);
