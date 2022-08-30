@@ -19,7 +19,11 @@ function App() {
         <h1>ConvertThings</h1>
         <select value={measure} onChange={(e) => setMeasure(e.target.value)}>
           {measures.map((measure) => {
-            return <option value={measure}>{format(measure)}</option>;
+            return (
+              <option key={measure} value={measure}>
+                {format(measure)}
+              </option>
+            );
           })}
         </select>
         <Convert measure={convert().list(measure)} />
